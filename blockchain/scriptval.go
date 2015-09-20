@@ -11,7 +11,7 @@ import (
 
 	"github.com/CryptocurrencyCabal/htcd/txscript"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // txValidateItem holds a transaction along with which input to validate.

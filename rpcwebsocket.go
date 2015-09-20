@@ -21,7 +21,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/database"
 	"github.com/CryptocurrencyCabal/htcd/txscript"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 	"github.com/btcsuite/fastsha256"
 	"github.com/btcsuite/golangcrypto/ripemd160"
 	"github.com/btcsuite/websocket"

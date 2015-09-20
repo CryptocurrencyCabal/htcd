@@ -12,7 +12,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/database"
 	_ "github.com/CryptocurrencyCabal/htcd/database/memdb"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // This example demonstrates how to create a new chain instance and use

@@ -15,7 +15,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/database"
 	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 var zeroHash = wire.ShaHash{}

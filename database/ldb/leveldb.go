@@ -14,7 +14,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/database"
 	"github.com/CryptocurrencyCabal/htcd/wire"
 	"github.com/btcsuite/btclog"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 	"github.com/btcsuite/goleveldb/leveldb"
 	"github.com/btcsuite/goleveldb/leveldb/opt"
 )

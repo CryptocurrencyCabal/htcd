@@ -16,7 +16,7 @@ import (
 
 	. "github.com/CryptocurrencyCabal/htcd/txscript"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // testName returns a descriptive test name for the given reference test data.

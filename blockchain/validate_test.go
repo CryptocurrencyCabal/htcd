@@ -13,7 +13,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/blockchain"
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // TestCheckConnectBlock tests the CheckConnectBlock function to ensure it

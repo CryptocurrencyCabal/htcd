@@ -12,7 +12,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/txscript"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // This example demonstrates creating a script which pays to a bitcoin address.

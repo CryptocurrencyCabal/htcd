@@ -19,7 +19,7 @@ import (
 	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
 	_ "github.com/CryptocurrencyCabal/htcd/database/memdb"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // testDbType is the database backend type to use for the tests.

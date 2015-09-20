@@ -15,7 +15,7 @@ import (
 
 	"github.com/CryptocurrencyCabal/htcd/blockchain"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // TestReorganization loads a set of test blocks which force a chain

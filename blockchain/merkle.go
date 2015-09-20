@@ -8,7 +8,7 @@ import (
 	"math"
 
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // nextPowerOfTwo returns the next highest power of two from a given number if

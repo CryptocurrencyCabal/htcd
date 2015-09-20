@@ -12,7 +12,7 @@ import (
 
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/txscript"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // decodeHex decodes the passed hex string and returns the resulting bytes.  It

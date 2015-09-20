@@ -12,7 +12,7 @@ import (
 
 	"github.com/CryptocurrencyCabal/htcd/database"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 func Test_dupTx(t *testing.T) {

@@ -20,8 +20,8 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/blockchain"
 	"github.com/CryptocurrencyCabal/htcd/database"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
-	"github.com/CryptocurrencyCabal/htcd/btcutil/bloom"
+	"github.com/CryptocurrencyCabal/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil/bloom"
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/davecgh/go-spew/spew"
 )

@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/CryptocurrencyCabal/htcd/btcjson"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 	flags "github.com/btcsuite/go-flags"
 )
 

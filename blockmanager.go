@@ -17,7 +17,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/database"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 const (

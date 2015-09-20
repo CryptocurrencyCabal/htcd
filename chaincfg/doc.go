@@ -25,7 +25,7 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/CryptocurrencyCabal/htcd/btcutil"
+//          "github.com/CryptocurrencyCabal/btcutil"
 //          "github.com/CryptocurrencyCabal/htcd/chaincfg"
 //  )
 //

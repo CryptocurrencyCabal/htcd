@@ -10,7 +10,7 @@ import (
 	"github.com/CryptocurrencyCabal/htcd/chaincfg"
 	"github.com/CryptocurrencyCabal/htcd/database"
 	_ "github.com/CryptocurrencyCabal/htcd/database/memdb"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // This example demonstrates creating a new database and inserting the genesis

@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 // BehaviorFlags is a bitmask defining tweaks to the normal behavior when

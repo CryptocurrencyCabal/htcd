@@ -14,7 +14,7 @@ import (
 
 	"github.com/CryptocurrencyCabal/htcd/blockchain"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 )
 
 const (

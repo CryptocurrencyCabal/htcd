@@ -20,7 +20,7 @@ import (
 	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
 	_ "github.com/CryptocurrencyCabal/htcd/database/memdb"
 	"github.com/CryptocurrencyCabal/htcd/wire"
-	"github.com/CryptocurrencyCabal/htcd/btcutil"
+	"github.com/CryptocurrencyCabal/btcutil"
 	flags "github.com/btcsuite/go-flags"
 	"github.com/btcsuite/go-socks/socks"
 )
