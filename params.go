@@ -25,7 +25,8 @@ type params struct {
 var hooNetParams = params{
 	Params:   &chaincfg.HooNetParams,
 	rpcPort:  "8334",
-	dnsSeeds: []string{ // none yet!
+	dnsSeeds: []string{ 
+		"hoocoin.bitcoin-class.org",
 	},
 }
 
