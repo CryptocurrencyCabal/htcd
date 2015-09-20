@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcd/database"
-	_ "github.com/btcsuite/btcd/database/ldb"
-	"github.com/btcsuite/btcd/limits"
+	"github.com/CryptocurrencyCabal/htcd/blockchain"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
+	"github.com/CryptocurrencyCabal/htcd/limits"
 	"github.com/btcsuite/btclog"
 )
 

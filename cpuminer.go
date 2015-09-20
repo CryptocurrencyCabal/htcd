@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/blockchain"
+	"github.com/CryptocurrencyCabal/htcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 )
 
 const (

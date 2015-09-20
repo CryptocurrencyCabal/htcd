@@ -7,8 +7,8 @@ package blockchain_test
 import (
 	"testing"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/blockchain"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 )
 
 // TestMerkle tests the BuildMerkleTreeStore API.

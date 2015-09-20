@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/btcsuite/btcd/btcjson"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/btcjson"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 	flags "github.com/btcsuite/go-flags"
 )
 

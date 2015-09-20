@@ -8,11 +8,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/database/memdb"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/chaincfg"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	"github.com/CryptocurrencyCabal/htcd/database/memdb"
+	"github.com/CryptocurrencyCabal/htcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 )
 
 // TestClosed ensure calling the interface functions on a closed database

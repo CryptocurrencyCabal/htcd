@@ -9,11 +9,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/database"
-	_ "github.com/btcsuite/btcd/database/ldb"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/chaincfg"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
+	"github.com/CryptocurrencyCabal/htcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 	flags "github.com/btcsuite/go-flags"
 )
 

@@ -13,13 +13,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/database"
-	_ "github.com/btcsuite/btcd/database/ldb"
-	_ "github.com/btcsuite/btcd/database/memdb"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/blockchain"
+	"github.com/CryptocurrencyCabal/htcd/chaincfg"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	_ "github.com/CryptocurrencyCabal/htcd/database/ldb"
+	_ "github.com/CryptocurrencyCabal/htcd/database/memdb"
+	"github.com/CryptocurrencyCabal/htcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 )
 
 // testDbType is the database backend type to use for the tests.

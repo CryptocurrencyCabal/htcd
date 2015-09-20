@@ -10,12 +10,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/btcsuite/btcd/addrmgr"
+	"github.com/CryptocurrencyCabal/htcd/addrmgr"
 
-	"github.com/btcsuite/btcd/blockchain"
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/blockchain"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	"github.com/CryptocurrencyCabal/htcd/txscript"
+	"github.com/CryptocurrencyCabal/htcd/wire"
 	"github.com/btcsuite/btclog"
 	"github.com/btcsuite/seelog"
 )
@@ -53,7 +53,7 @@ var subsystemLoggers = map[string]btclog.Logger{
 	"AMGR": amgrLog,
 	"BCDB": bcdbLog,
 	"BMGR": bmgrLog,
-	"BTCD": btcdLog,
+	"WHCD": btcdLog,
 	"CHAN": chanLog,
 	"DISC": discLog,
 	"MINR": minrLog,
@@ -103,7 +103,7 @@ func useLogger(subsystemID string, logger btclog.Logger) {
 	case "BMGR":
 		bmgrLog = logger
 
-	case "BTCD":
+	case "WHCD":
 		btcdLog = logger
 
 	case "CHAN":

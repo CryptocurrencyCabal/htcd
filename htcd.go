@@ -6,13 +6,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/CryptocurrencyCabal/htcd/limits"
 	"net"
 	"net/http"
 	_ "net/http/pprof"
 	"os"
 	"runtime"
 	"runtime/pprof"
-	"github.com/btcsuite/btcd/limits"
 )
 
 var (

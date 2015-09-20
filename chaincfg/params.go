@@ -8,7 +8,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/btcsuite/btcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/wire"
 )
 
 // These variables are the chain proof-of-work limit parameters for each default
@@ -94,6 +94,51 @@ type Params struct {
 	// BIP44 coin type used in the hierarchical deterministic path for
 	// address generation.
 	HDCoinType uint32
+}
+
+// HooNetParams defines the network parameters for the HooCoin network.
+var HooNetParams = Params{
+	Name:        "hoonet",
+	Net:         wire.HooNet,
+	DefaultPort: "8333",
+
+	// Chain parameters
+	GenesisBlock:           &genesisBlock,
+	GenesisHash:            &genesisHash,
+	PowLimit:               mainPowLimit,
+	PowLimitBits:           0x1d00ffff,
+	SubsidyHalvingInterval: 210000,
+	ResetMinDifficulty:     false,
+	GenerateSupported:      false,
+
+	// No checkpoints for hoonet (yet).
+	Checkpoints: []Checkpoint{},
+
+	// Enforce current block version once majority of the network has
+	// upgraded.
+	// 75% (750 / 1000)
+	// Reject previous block versions once a majority of the network has
+	// upgraded.
+	// 95% (950 / 1000)
+	BlockEnforceNumRequired: 750,
+	BlockRejectNumRequired:  950,
+	BlockUpgradeNumToCheck:  1000,
+
+	// Mempool parameters
+	RelayNonStdTxs: false,
+
+	// Address encoding magics
+	PubKeyHashAddrID: 0x00, // starts with 1
+	ScriptHashAddrID: 0x05, // starts with 3
+	PrivateKeyID:     0x80, // starts with 5 (uncompressed) or K (compressed)
+
+	// BIP32 hierarchical deterministic extended key magics
+	HDPrivateKeyID: [4]byte{0x04, 0x88, 0xad, 0xe4}, // starts with xprv
+	HDPublicKeyID:  [4]byte{0x04, 0x88, 0xb2, 0x1e}, // starts with xpub
+
+	// BIP44 coin type used in the hierarchical deterministic path for
+	// address generation.
+	HDCoinType: 0,
 }
 
 // MainNetParams defines the network parameters for the main Bitcoin network.
@@ -320,6 +365,7 @@ var (
 
 var (
 	registeredNets = map[wire.BitcoinNet]struct{}{
+		HooNetParams.Net:        struct{}{},
 		MainNetParams.Net:       struct{}{},
 		TestNet3Params.Net:      struct{}{},
 		RegressionNetParams.Net: struct{}{},
@@ -327,12 +373,14 @@ var (
 	}
 
 	pubKeyHashAddrIDs = map[byte]struct{}{
+		HooNetParams.PubKeyHashAddrID:   struct{}{},
 		MainNetParams.PubKeyHashAddrID:  struct{}{},
 		TestNet3Params.PubKeyHashAddrID: struct{}{}, // shared with regtest
 		SimNetParams.PubKeyHashAddrID:   struct{}{},
 	}
 
 	scriptHashAddrIDs = map[byte]struct{}{
+		HooNetParams.ScriptHashAddrID:   struct{}{},
 		MainNetParams.ScriptHashAddrID:  struct{}{},
 		TestNet3Params.ScriptHashAddrID: struct{}{}, // shared with regtest
 		SimNetParams.ScriptHashAddrID:   struct{}{},
@@ -340,6 +388,7 @@ var (
 
 	// Testnet is shared with regtest.
 	hdPrivToPubKeyIDs = map[[4]byte][]byte{
+		HooNetParams.HDPrivateKeyID:   HooNetParams.HDPublicKeyID[:],
 		MainNetParams.HDPrivateKeyID:  MainNetParams.HDPublicKeyID[:],
 		TestNet3Params.HDPrivateKeyID: TestNet3Params.HDPublicKeyID[:],
 		SimNetParams.HDPrivateKeyID:   SimNetParams.HDPublicKeyID[:],

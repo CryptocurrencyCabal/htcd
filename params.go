@@ -5,13 +5,13 @@
 package main
 
 import (
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/chaincfg"
+	"github.com/CryptocurrencyCabal/htcd/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the
 // currently active bitcoin network.
-var activeNetParams = &mainNetParams
+var activeNetParams = &hooNetParams
 
 // params is used to group parameters for various networks such as the main
 // network and test networks.
@@ -19,6 +19,14 @@ type params struct {
 	*chaincfg.Params
 	rpcPort  string
 	dnsSeeds []string
+}
+
+// hooNetParams: these are the params for htcd
+var hooNetParams = params{
+	Params:   &chaincfg.HooNetParams,
+	rpcPort:  "8334",
+	dnsSeeds: []string{ // none yet!
+	},
 }
 
 // mainNetParams contains parameters specific to the main network

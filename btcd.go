@@ -13,7 +13,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/btcsuite/btcd/limits"
+	"github.com/CryptocurrencyCabal/htcd/limits"
 )
 
 var (

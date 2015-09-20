@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/CryptocurrencyCabal/htcd/database"
+	"github.com/CryptocurrencyCabal/htcd/wire"
 	"github.com/btcsuite/btclog"
-	"github.com/btcsuite/btcutil"
+	"github.com/CryptocurrencyCabal/htcd/btcutil"
 	"github.com/btcsuite/goleveldb/leveldb"
 	"github.com/btcsuite/goleveldb/leveldb/opt"
 )
