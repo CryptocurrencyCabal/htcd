@@ -1,3 +1,9 @@
+htcd
+====
+
+This is a fork of btcd, modified for the [University of Virginia
+Cryptocurrency Cabal Fall 2015 course](http://bitcoin-class.org).
+
 btcd
 ====
 
